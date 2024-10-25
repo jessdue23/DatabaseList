@@ -1,7 +1,10 @@
+using SQLite;
 namespace MovieApp.Models;
 
 public class Movie
 {
+    
+    [PrimaryKey, AutoIncrement]
     //three properties
     public int ID { get; set; }
     public string Title { get; set; }
